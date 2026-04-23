@@ -6,7 +6,9 @@
     <title>Contact</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-   <div>
+<body id="contact">
+<header>
+<div>
 <nav class="navbar">
     <div class="logo"><span>My</span>Portifolio</div>
     <div class="search"><input type="text"  placeholder="Search......"></div>
@@ -18,38 +20,46 @@
                 <a href="./contact.html">Contact</a>
 </nav>
 </div>
-<body id="contact">
-    <div >
-        <input type="text" id="full-name" placeholder="Full name">
-         <input type="email" id="email"placeholder="Email">
-          <input textarea="text"id="textarea"placeholder="Enter Text">
+    
+
+<div class="contact">
+    <h1>Contact</h1>
+    <form>
+        <input type="text" id="full-name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Describe your issue" rows="5" required></textarea>
+        <button type="submit" id="button">Submit</button>
+    </form>
+</div>
+<div class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section">
+      <p>Thank You for visiting</p>
     </div>
-    <div>
-        <button  type="button" >Submit</button>
+
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/Aboutme.html">About Me</a></li>
+        <li><a href="/Resume.html">Resume</a></li>
+        <li><a href="/Project.html">Projects</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
     </div>
-    <footer>
-        <div>
-            <div>
-               <p>Thank You for visiting </p>
-            </div>
-            <div>
-                <h2>Resource</h2>
-                <a href="./index.html">Home</a>
-                <a href="./Aboutme.html">About Me</a>
-                <a href="./Resume.html"> Resume</a>
-                <a href="./Project.html">Project</a>
-                <a href="./contact.html">Contact</a>
-            </div>
-            <div>
-                <h2>contact Me</h2>
-                <address>
-                    Email:iribagizaemerance63@gmail.com
-                </address>
-                <address>
-                    Tel:0781116376
-                </address>
-            </div>
-        </div>
-    </footer>
+
+    <div class="footer-section">
+      <h4>Contact Me</h4>
+      <p>Email: yourname@gmail.com</p>
+      <p>Tel: 0781116376</p>
+    </div>
+
+  </div>
+</div>
+</header>
+
+
+
 </body>
 </html>
