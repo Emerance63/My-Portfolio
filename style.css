@@ -227,3 +227,151 @@ justify-content: center;
     padding: 20px;
     border-radius: 40px;
 }
+/* PROJECT SECTION */
+#Project {
+    max-width: 1400px;
+    color: white;
+    padding: 80px 60px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#Project h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+
+#Project > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+#Project > div:last-child {
+    margin-bottom: 0;
+}
+
+#Project p {
+    color: #D1D5DB;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#Project ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#Project li {
+    color: #bbb;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#Project li:before {
+    content: "•";
+    color: white;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+#Project img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    #Project > div {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    #Project {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #Project {
+        padding: 40px 30px;
+        margin-top: 80px;
+    }
+    
+    #Project h1 {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+}
+/* CONTACT PAGE LAYOUT */
+body#contact {
+    min-height: 100vh;
+    padding: 120px 40px 40px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* keep navbar fixed and visible */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar .search {
+    flex: 1;
+    max-width: 320px;
+}
+
+.navbar .search input {
+    width: 100%;
+    background: #1d1d1d;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #7C3AED;
+}
+
