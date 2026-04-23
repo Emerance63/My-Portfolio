@@ -18,6 +18,18 @@ body {
   margin: 20px;
   position: fixed;
 }
+.profile{
+   display: flex;
+   justify-content: center;
+   background-color: #7C634D;
+   /* width: 65%; */
+   margin-right: 5rem;
+   margin-top: -9rem;
+   border-radius: 40px;
+   width: 25%;
+   padding-right:90px;
+}
+
 
 .logo {
   color: #fff;
@@ -72,7 +84,12 @@ h1 {
 h1 span {
   color: #7c3aed;
 }
-
+.article{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    width: 89rem;
+}
 .hero article p {
   margin-top: 50px;
   color: #bbb;
@@ -80,7 +97,11 @@ h1 span {
   font-size: 16px;
   padding: 20px;
 }
-
+.article h3{
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-left: 7rem;
+}
 /* SOCIAL ICONS */
 .socials {
   margin-left: -100px;
